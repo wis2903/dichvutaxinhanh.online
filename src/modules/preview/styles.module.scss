@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    padding: 32px 0;
+    background: #429255;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 120%;
+        z-index: 0;
+        opacity: 0.08;
+        filter: grayscale(1);
+    }
+
+    > div {
+        color: #fff;
+        font-size: 21px;
+        line-height: 32px;
+        font-weight: 500;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
