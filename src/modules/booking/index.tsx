@@ -112,8 +112,8 @@ const Booking = ({ containerRef }: BookingProps): JSX.Element => {
         setIsLoading(true);
         try {
             await emailjs.send(
-                'service_0dnbn46',
-                'template_gpm3gae',
+                'service_if6cfvw',
+                'template_yyzd50c',
                 {
                     phone: formData.phone?.value,
                     address_from: formData.from?.value,
@@ -121,7 +121,7 @@ const Booking = ({ containerRef }: BookingProps): JSX.Element => {
                     time: formData.time?.value,
                     type: `${formData.type?.value} chỗ`,
                 },
-                'user_C8eRBRUg0nugZvQHmtpwh'
+                'dROewN-nD9EFC4nDN'
             );
             setIsLoading(false);
             setIsShowPopup(true);
